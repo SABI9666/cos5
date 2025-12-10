@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ProductsPage from './pages/ProductsPage';
-import ProductDetail from './pages/ProductDetail';
-import AdminPanel from './pages/AdminPanel';
-import Cart from './components/Cart';
+import HomePage from './pages/HomePage.jsx';
+import ProductsPage from './pages/ProductsPage.jsx';
+import ProductDetail from './pages/ProductDetail.jsx';
+import AdminPanel from './pages/AdminPanel.jsx';
+import Cart from './components/Cart.jsx';
 import './App.css';
 
 function App() {
