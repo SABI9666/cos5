@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cart.css';
+import './cart.css';
 
 const Cart = ({ items, isOpen, onClose, updateQuantity, removeFromCart }) => {
   const total = items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
@@ -64,4 +64,4 @@ const Cart = ({ items, isOpen, onClose, updateQuantity, removeFromCart }) => {
   );
 };
 
-export default Cart;
+export default cart;
