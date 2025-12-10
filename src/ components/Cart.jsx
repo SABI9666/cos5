@@ -65,4 +65,3 @@ const Cart = ({ items, isOpen, onClose, updateQuantity, removeFromCart }) => {
 };
 
 export default Cart;
-
