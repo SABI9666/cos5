@@ -210,4 +210,3 @@ const HomePage = ({ onCartClick, cartCount }) => {
 };
 
 export default HomePage;
-
