@@ -5,7 +5,7 @@ import ProductsPage from './pages/productsPage.jsx';
 import ProductDetail from './pages/productDetail.jsx';
 import AdminPanel from './pages/adminPanel.jsx';
 import Cart from './components/cart.jsx';
-import './App.css';
+import './app.css';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
