@@ -10,7 +10,7 @@ const Cart = ({ items, isOpen, onClose, updateQuantity, removeFromCart }) => {
       <div className={`cart-panel ${isOpen ? 'open' : ''}`}>
         <div className="cart-header">
           <h2>Shopping Cart</h2>
-          <button className="cart-close-btn" onClick={onClose}>×</button>
+          <button className="cart-close-btn" onClick={onClose}>&times;</button>
         </div>
 
         <div className="cart-content">
@@ -30,7 +30,7 @@ const Cart = ({ items, isOpen, onClose, updateQuantity, removeFromCart }) => {
                     <img src={item.imageUrl || 'https://via.placeholder.com/100'} alt={item.name} />
                     <div className="cart-item-details">
                       <h4>{item.name}</h4>
-                      <p className="cart-item-price">₹{item.price}</p>
+                      <p className="cart-item-price">&#8377;{item.price}</p>
                       <div className="quantity-controls">
                         <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
                         <span>{item.quantity}</span>
@@ -41,7 +41,7 @@ const Cart = ({ items, isOpen, onClose, updateQuantity, removeFromCart }) => {
                       className="remove-item-btn"
                       onClick={() => removeFromCart(item.id)}
                     >
-                      ×
+                      &times;
                     </button>
                   </div>
                 ))}
@@ -50,7 +50,7 @@ const Cart = ({ items, isOpen, onClose, updateQuantity, removeFromCart }) => {
               <div className="cart-footer">
                 <div className="cart-total">
                   <span>Total:</span>
-                  <span className="total-amount">₹{total.toFixed(2)}</span>
+                  <span className="total-amount">&#8377;{total.toFixed(2)}</span>
                 </div>
                 <button className="checkout-btn">
                   Proceed to Checkout
